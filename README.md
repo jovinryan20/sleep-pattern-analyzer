@@ -25,24 +25,29 @@ sleep-analyzer/
 
 ## 🚀 How to Run
 
-1. Clone the repo or download the folder.
-2. Open a terminal inside the folder.
-3. Run these steps:
+Clone the repo or download the folder.  
+Open **Command Prompt** or **PowerShell** inside the project folder.
 
-### Step 1: Generate fake data
+## Setup (optional but recommended)
+Create a virtual environment and install requirements:
+python -m venv .venv
+.venv\Scripts\Activate.ps1
+pip install -r requirements.txt
 
-- generate_data.py
-This will create a file called logs.csv inside the data/ folder.
+### Step 1 — Generate fake data
+This creates data/logs.csv.
 
-### Step 2: Analyze the data
+python generate_data.py
 
-- analyze.py
-This will read logs.csv, calculate average sleep for each user, and save the results in user_sleep_summary.csv.
+### Step 2 — Analyze the data
+This reads data/logs.csv and writes outputs/user_sleep_summary.csv.
 
-### Step 3: Visualize the results
+python analyze.py
 
-- plot.py
-This will show a bar chart of average sleep hours per user with healthy ranges marked.
+### Step 3 — Visualize the results
+This saves outputs/sleep_plot.png and shows a bar chart.
+
+python plot.py
 
 ### 📊 Example Output
 
