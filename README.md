@@ -7,17 +7,17 @@ The idea is: phone logs can tell when people sleep and wake up, so I created a s
 
 ## Project Structure
 
-sleep-analyzer/
+sleep-pattern-analyzer/
 
 ├── data/
 
-│ └── logs.csv # generated fake data
+│ └── logs.csv #generated fake data
 
-├── generate_data.py # script to create fake sleep data
+├── generate_data.py #script to create fake sleep data
 
-├── analyze.py # script to analyze sleep duration
+├── analyze.py #script to analyze sleep duration
 
-├── plot.py # script to visualize results
+├── plot.py #script to visualize results
 
 └── README.md
 
