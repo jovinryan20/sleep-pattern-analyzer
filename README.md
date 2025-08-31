@@ -19,6 +19,8 @@ sleep-pattern-analyzer/
 
 ├── plot.py #script to visualize results
 
+├── requirements.txt 
+
 └── README.md
 
 ---
@@ -30,32 +32,33 @@ Open **Command Prompt** or **PowerShell** inside the project folder.
 
 ## Setup (optional but recommended)
 Create a virtual environment and install requirements:
-python -m venv .venv
+
+**python -m venv .venv
 .venv\Scripts\Activate.ps1
-pip install -r requirements.txt
+pip install -r requirements.txt**
 
 ### Step 1 — Generate fake data
 This creates data/logs.csv.
 
-python generate_data.py
+**python generate_data.py**
 
 ### Step 2 — Analyze the data
 This reads data/logs.csv and writes outputs/user_sleep_summary.csv.
 
-python analyze.py
+**python analyze.py**
 
 ### Step 3 — Visualize the results
 This saves outputs/sleep_plot.png and shows a bar chart.
 
-python plot.py
+**python plot.py**
 
 ### 📊 Example Output
 
-logs.csv → daily sleep logs for a few fake users
+- **logs.csv** → daily sleep logs for a few fake users
 
-user_sleep_summary.csv → each user’s average sleep and health status
+- **user_sleep_summary.csv** → each user’s average sleep and health status
 
-Bar chart → compares user sleep with healthy range (7–9 hours)
+- **Bar chart** → compares user sleep with healthy range (7–9 hours)
 
 **Here’s an example of the sleep pattern visualization:**
 
